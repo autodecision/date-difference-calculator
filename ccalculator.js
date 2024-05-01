@@ -28,14 +28,22 @@ function makeMaxDate() {
 onlyDateBtn.addEventListener("click", () => {
     onlyDateVal = moment(onlyDate.value);
     differenceSingle = moment.preciseDiff(onlyDateVal, moment(), true);
-    oneDateOutput.innerText = `The difference is ${differenceSingle.years} years, ${differenceSingle.months} months, and ${differenceSingle.days} days!`
+    let yearsPlural, monthsPlural, daysPlural;
+    yearsPlural = differenceSingle.years != 1 ? "s" : "";
+    monthsPlural = differenceSingle.months != 1 ? "s" : "";
+    daysPlural = differenceSingle.days != 1 ? "s" : "";
+    oneDateOutput.innerText = `The difference is ${differenceSingle.years} year${yearsPlural}, ${differenceSingle.months} month${monthsPlural}, and ${differenceSingle.days} day${daysPlural}!`
 });
 
 twoDatesBtn.addEventListener("click", () => {
     firstDateVal = moment(firstDate.value);
     secondDateVal = moment(secondDate.value);
     differenceDouble = moment.preciseDiff(firstDateVal, secondDateVal, true);
-    twoDatesOutput.innerText = `The difference is ${differenceDouble.years} years, ${differenceDouble.months} months, and ${differenceDouble.days} days!`
+    let yearsPlural, monthsPlural, daysPlural;
+    yearsPlural = differenceDouble.years != 1 ? "s" : "";
+    monthsPlural = differenceDouble.months != 1 ? "s" : "";
+    daysPlural = differenceDouble.days != 1 ? "s" : "";
+    twoDatesOutput.innerText = `The difference is ${differenceDouble.years} year${yearsPlural}, ${differenceDouble.months} month${monthsPlural}, and ${differenceDouble.days} day${daysPlural}!`
 });
 
 document.getElementById("second-date").setAttribute("value", makeMaxDate());
