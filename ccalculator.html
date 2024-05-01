@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Calculator</title>
+    <link rel="stylesheet" href="ccalculator.css">
+</head>
+<body>
+    <h1>Welcome to the Date Difference Calculator!</h1>
+    <div id="one-date-input">
+        <h2>Calculate the difference between a date and today!</h2>
+        <label for="start">Enter date:</label>
+        <input type="date" id="only-date" name="only-date" value="1990-10-10"/>
+        <button id="only-date-btn">Calculate!</button>
+        <span id="one-date-output"></span>
+    </div>
+    <div id="one-date-output"></div>
+    <div id="two-date-inputs">
+        <h2>Calculate the difference between two dates!</h2>
+        <label for="start">First date:</label>
+        <input type="date" id="first-date" name="first-date" value="1990-10-10"/>
+        <label for="start">Second date:</label>
+        <input type="date" id="second-date" name="second-date" value="2024-05-30"/>
+        <button id="two-dates-btn">Calculate!</button>
+        <span id="two-dates-output"></span>
+    </div>
+    <div id="two-dates-output"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+    <script src="ccalculator.js"></script>
+</body>
+</html>

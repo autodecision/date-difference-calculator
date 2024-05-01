@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 1.4rem;
+    color: aliceblue;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(72,72,130,1));
+}
+
+h1, div {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 5vh;
+}
+
+#first-date {
+    margin-right: 4vw;
+}
+
+button {
+    margin-left: 1vw;
+}
+
+span {
+    display: block;
+    margin-top: 2vh;
+}
